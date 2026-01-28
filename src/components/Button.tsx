@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Pressable, Text, StyleSheet } from 'react-native';
 import { ButtonProps } from '../types';
+import { colors } from '../constants/theme';
 
 export function Button({ title, onPress }: ButtonProps) {
   return (
@@ -14,7 +15,7 @@ export function Button({ title, onPress }: ButtonProps) {
 
 const styles = StyleSheet.create({
   buttonWrapper: {
-    backgroundColor: '#007AFF',
+    backgroundColor: colors.primary,
     borderRadius: 8,
     overflow: 'hidden',
     margin: 8,
@@ -26,7 +27,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   buttonText: {
-    color: '#FFFFFF',
+    color: colors.buttonText,
     fontSize: 16,
     fontWeight: '600',
   },

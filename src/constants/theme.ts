@@ -1,9 +1,17 @@
 import { StyleSheet } from 'react-native';
 
+export const colors = {
+  primary: '#28A745',
+  background: '#F5F5F5',
+  text: '#333333',
+  counterText: '#007AFF',
+  buttonText: '#FFFFFF',
+};
+
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5F5F5',
+    backgroundColor: colors.background,
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
@@ -11,13 +19,13 @@ export const styles = StyleSheet.create({
   title: {
     fontSize: 32,
     fontWeight: 'bold',
-    color: '#333333',
+    color: colors.text,
     marginBottom: 40,
   },
   counter: {
     fontSize: 64,
     fontWeight: 'bold',
-    color: '#007AFF',
+    color: colors.counterText,
     marginBottom: 40,
   },
   buttonRow: {
